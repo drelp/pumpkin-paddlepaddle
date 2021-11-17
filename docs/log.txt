@@ -33,3 +33,26 @@ step 938/938 [==============================] - loss: 0.0071 - acc: 0.9797 - 43m
 Eval begin...
 step 157/157 [==============================] - loss: 4.9309e-04 - acc: 0.9831 - 20ms/step
 Eval samples: 10000
+
+python test1.py
+grep: warning: GREP_OPTIONS is deprecated; please use an alias or script
+2.2.0
+download training data and load training data
+load finished
+train_data0 label is: [5]
+epoch: 0, batch_id: 0, loss is: [3.297386], acc is: [0.]
+epoch: 0, batch_id: 300, loss is: [0.07199657], acc is: [0.96875]
+epoch: 0, batch_id: 600, loss is: [0.13433537], acc is: [0.9375]
+epoch: 0, batch_id: 900, loss is: [0.14423753], acc is: [0.953125]
+epoch: 1, batch_id: 0, loss is: [0.07548415], acc is: [0.96875]
+epoch: 1, batch_id: 300, loss is: [0.15533829], acc is: [0.96875]
+epoch: 1, batch_id: 600, loss is: [0.03403714], acc is: [1.]
+epoch: 1, batch_id: 900, loss is: [0.04688939], acc is: [0.984375]
+batch_id: 0, loss is: [0.03755619], acc is: [0.984375]
+batch_id: 20, loss is: [0.2019758], acc is: [0.9375]
+batch_id: 40, loss is: [0.07730137], acc is: [0.96875]
+batch_id: 60, loss is: [0.04239092], acc is: [0.96875]
+batch_id: 80, loss is: [0.02183831], acc is: [1.]
+batch_id: 100, loss is: [0.00492824], acc is: [1.]
+batch_id: 120, loss is: [0.01527268], acc is: [1.]
+batch_id: 140, loss is: [0.18007813], acc is: [0.953125]
