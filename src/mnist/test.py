@@ -1,5 +1,7 @@
 import paddle
 from paddle.vision.transforms import Compose, Normalize
+import numpy as np
+import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
     print(paddle.__version__)
@@ -11,3 +13,9 @@ if __name__ == "__main__":
     train_dataset = paddle.vision.datasets.MNIST(mode='train', transform=transform)
     test_dataset = paddle.vision.datasets.MNIST(mode='test', transform=transform)
     print('load finished')
+
+    train_data0, train_label_0 = train_dataset[0][0], train_dataset[0][1]
+    train_data0 = train_data0.reshape([28, 28])
+    plt.figure(figsize=(2, 2))
+    plt.imshow(train_data0, cmap=plt.cm.binary)
+    print('train_data0 label is: ' + str(train_label_0))
