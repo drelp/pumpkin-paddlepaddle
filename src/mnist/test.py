@@ -3,6 +3,7 @@ from paddle.vision.transforms import Compose, Normalize
 import paddle.nn.functional as F
 import numpy as np
 import matplotlib.pyplot as plt
+from paddle.metric import Accuracy
 
 class LeNet(paddle.nn.Layer):
     def __init__(self):
@@ -46,3 +47,20 @@ if __name__ == "__main__":
     plt.figure(figsize=(2, 2))
     plt.imshow(train_data0, cmap=plt.cm.binary)
     print('train_data0 label is: ' + str(train_label_0))
+
+    model = paddle.Model(LeNet())  # 用Model封装模型
+    optim = paddle.optimizer.Adam(learning_rate=0.001, parameters=model.parameters())
+
+    # 配置模型
+    model.prepare(
+        optim,
+        paddle.nn.CrossEntropyLoss(),
+        Accuracy()
+    )
+
+    # 训练模型
+    model.fit(train_dataset,
+        epochs=2,
+        batch_size=64,
+        verbose=1
+    )
