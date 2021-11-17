@@ -53,6 +53,6 @@ model.fit(train_dataset,
         test_dataset,
         epochs=3,
         batch_size=64,
-        save_dir='/model/mnist_checkpoint',
+        save_dir='mnist_checkpoint',
         verbose=1
         )
