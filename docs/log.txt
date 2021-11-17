@@ -19,3 +19,5 @@ Begin to download
 item 2/2 [===========================>..] - ETA: 0s - 733us/item
 Download finished
 load finished
+
+train_data0 label is: [5]
