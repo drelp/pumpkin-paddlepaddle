@@ -64,3 +64,5 @@ if __name__ == "__main__":
         batch_size=64,
         verbose=1
     )
+
+    model.evaluate(test_dataset, batch_size=64, verbose=1)
