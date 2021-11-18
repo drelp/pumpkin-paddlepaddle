@@ -1,0 +1,2 @@
+2021-11-17
+1. add mnist train code
