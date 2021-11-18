@@ -2,7 +2,7 @@
 pumpkin-paddlepaddle
 
 ```shell script
-mkdir /root/.cache
+# mkdir /root/.cache
 cp -r /dataset/cache/paddle /root/.cache
 ls /root/.cache/paddle/dataset/mnist
 python /code/src/mnist/train.py
