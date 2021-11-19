@@ -1,6 +1,10 @@
 # pumpkin-paddlepaddle
 pumpkin-paddlepaddle
 
+```
+pip3.9 install paddlepaddle -i https://pypi.doubanio.com/simple/
+```
+
 ```shell script
 # mkdir /root/.cache
 cp -r /dataset/cache/paddle /root/.cache

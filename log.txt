@@ -1,0 +1,27 @@
+pip3.9 install paddlepaddle -i https://pypi.doubanio.com/simple/
+DEPRECATION: Configuring installation scheme with distutils config files is deprecated and will no longer work in the near future. If you are using a Homebrew or Linuxbrew Python, please see discussion at https://github.com/Homebrew/homebrew-core/issues/76621
+Looking in indexes: https://pypi.doubanio.com/simple/
+Collecting paddlepaddle
+  Downloading https://pypi.doubanio.com/packages/98/72/af288090286c8a372f6580f88c5c424473c74575d673bdb960b0a04f393f/paddlepaddle-2.2.0-cp39-cp39-macosx_10_14_x86_64.whl (73.8 MB)
+     |████████████████████████████████| 73.8 MB 39 kB/s
+Requirement already satisfied: six in /usr/local/lib/python3.9/site-packages (from paddlepaddle) (1.16.0)
+Requirement already satisfied: numpy>=1.13 in /usr/local/lib/python3.9/site-packages (from paddlepaddle) (1.21.4)
+Collecting astor
+  Downloading https://pypi.doubanio.com/packages/c3/88/97eef84f48fa04fbd6750e62dcceafba6c63c81b7ac1420856c8dcc0a3f9/astor-0.8.1-py2.py3-none-any.whl (27 kB)
+Collecting decorator
+  Downloading https://pypi.doubanio.com/packages/3d/cc/d7b758e54779f7e465179427de7e78c601d3330d6c411ea7ba9ae2f38102/decorator-5.1.0-py3-none-any.whl (9.1 kB)
+Requirement already satisfied: protobuf>=3.1.0 in /usr/local/lib/python3.9/site-packages (from paddlepaddle) (3.17.3)
+Requirement already satisfied: requests>=2.20.0 in /usr/local/lib/python3.9/site-packages (from paddlepaddle) (2.26.0)
+Requirement already satisfied: Pillow in /usr/local/lib/python3.9/site-packages (from paddlepaddle) (8.4.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.9/site-packages (from requests>=2.20.0->paddlepaddle) (1.26.7)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.9/site-packages (from requests>=2.20.0->paddlepaddle) (3.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /usr/local/lib/python3.9/site-packages (from requests>=2.20.0->paddlepaddle) (2.0.7)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.9/site-packages (from requests>=2.20.0->paddlepaddle) (2021.10.8)
+Installing collected packages: decorator, astor, paddlepaddle
+  DEPRECATION: Configuring installation scheme with distutils config files is deprecated and will no longer work in the near future. If you are using a Homebrew or Linuxbrew Python, please see discussion at https://github.com/Homebrew/homebrew-core/issues/76621
+  DEPRECATION: Configuring installation scheme with distutils config files is deprecated and will no longer work in the near future. If you are using a Homebrew or Linuxbrew Python, please see discussion at https://github.com/Homebrew/homebrew-core/issues/76621
+  DEPRECATION: Configuring installation scheme with distutils config files is deprecated and will no longer work in the near future. If you are using a Homebrew or Linuxbrew Python, please see discussion at https://github.com/Homebrew/homebrew-core/issues/76621
+DEPRECATION: Configuring installation scheme with distutils config files is deprecated and will no longer work in the near future. If you are using a Homebrew or Linuxbrew Python, please see discussion at https://github.com/Homebrew/homebrew-core/issues/76621
+Successfully installed astor-0.8.1 decorator-5.1.0 paddlepaddle-2.2.0
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the '/usr/local/opt/python@3.9/bin/python3.9 -m pip install --upgrade pip' command.
