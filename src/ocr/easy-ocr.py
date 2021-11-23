@@ -17,7 +17,7 @@ def test(img_path):
 
     from PIL import Image
 
-    font_path = '/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf' # PaddleOCR下提供字体包
+    font_path = '/usr/share/fonts/chinese/simsun.ttf' # PaddleOCR下提供字体包
     image = Image.open(img_path).convert('RGB')
     im_show = draw_structure_result(image, result, font_path=font_path)
     im_show = Image.fromarray(im_show)
