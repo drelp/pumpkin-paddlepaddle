@@ -30,6 +30,8 @@ def tests(img_dir):
     for fi in files:
         fi_d = os.path.join(img_dir, fi)
         if os.path.isdir(fi_d):
+            if fi_d == "__MACOSX":
+                continue
             print(os.path.join(img_dir, fi_d))
             tests(fi_d)
         else:
